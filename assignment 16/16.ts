@@ -1,0 +1,11 @@
+let newguests = ["Zaid", "Ali", "Faiz", "Umer"];
+let notComing = newguests[3];
+console.log(notComing, "is not coming");
+newguests.splice(3, 4, "Fariz");
+console.log("Yessss! We found a bigger table for dinner.");
+newguests.unshift("Sajid");
+newguests.push("Sabeeh");
+let middleName = (newguests.length / 2);
+newguests.splice(middleName, 0, "Yousuf");
+console.log("New guest list");
+newguests.forEach(guest => console.log(`Hello ${guest}, you are invited for dinner.`));

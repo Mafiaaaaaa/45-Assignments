@@ -1,0 +1,10 @@
+let favPlaces = ["Mount Everest", "Gilgit", "Turkiye", "SaudiArabia"];
+console.log("original order", favPlaces);
+console.log("Alphabetical order",[...favPlaces].sort());
+console.log("again original order", favPlaces);
+console.log("reverse order", [...favPlaces].reverse());
+console.log("again original order", favPlaces);
+console.log("now original is reversed", favPlaces.reverse());
+console.log("now again original order", favPlaces.reverse());
+console.log("now original in alphabetical order", favPlaces.sort());
+console.log("now original is reversed again", favPlaces.reverse());
