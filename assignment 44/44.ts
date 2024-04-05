@@ -1,6 +1,8 @@
 function Sandwiches(...items:string[]){
-    return ( items.forEach), console.log(`\nI want Sandwich with extra ${items}`);
+    console.log("\nI want Sandwiches with extra");
+    return  items.forEach(item => console.log("- " + item));
 }
-Sandwiches ("\n- Mayo", "\n- Chicken", "\n- BBQ."); 
-Sandwiches ("\n- Perri perri", "\n- Pepperoni", "\n- Tuna.");
-Sandwiches ("\n- Sauce", "\n- Cheeze.");
+Sandwiches ("Mayo", "Chicken", "BBQ."); 
+Sandwiches ("Perri perri", "Pepperoni", "Tuna.");
+Sandwiches ("Sauce", "Cheeze.");
+
