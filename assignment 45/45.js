@@ -10,6 +10,3 @@ function carOne(manufacturer, model, color, keyless, insurance) {
 ;
 var order = carOne("Toyota", 2023, "Black", "No", true);
 console.log(order);
-//this is for testing undefined values
-var ordertwo = carOne("Honda", 1960, "Blue");
-console.log(ordertwo);
