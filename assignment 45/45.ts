@@ -1,22 +1,16 @@
-type  car = {
-    manufacturer:string,
-    model:number,
-    color:string,
-    keyless:any,
-    insurance:boolean
+function carOne (manufacturer, model, ...options){
+        let car = {
+        manufacturer: manufacturer,
+        model: model
+    };
+    options.forEach(option => {
+        let [key, value] = option.split(":");
+        car[key.trim()] = value.trim();
+    })
+    return car;
 };
+let order = carOne("Buggati", "2024", "color:Copper", "Number_Plate:T8888");
 
-function carOne (manufacturer, model, color, keyless?, insurance?){
-    return{
-        manufacturer,
-        model,
-        color,
-        keyless,
-        insurance,
-    }
-};
-
-let order:car = carOne("Toyota", 2023,"Black", "No", true);
 console.log(order);
 
 
